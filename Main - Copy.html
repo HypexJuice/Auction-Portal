@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="with==device-width, initial-scale=1.0">
+        <title>IPL Player Auction</title>
+        <link rel="stylesheet" href="style - Copy.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link rel="stylesheet" href="//fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+<link rel="icon" href="Images/tabicon.ico">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="Main - Copy.html"><img src="Images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#foot">ABOUT</a></li>
+                    <li><a href="#Teams">TEAMS</a></li>
+                    <li><a href="#2022">IPL'22</a></li>
+                    <li><a href="#contact">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>IPL Player Auction</h1>
+            <p>The IPL auction is a yearly event conducted by BCCI to auction the cricket players to various franchisees. A dedicated auctioneer controls the proceedings of this multi-day event. IPL franchises fiercely bid for the listed players. The auction ends with a settled squad for every IPL team.</p>
+            <a href="login.html" class="hero-btn">LIVE ACTION</a>
+        </div>
+    </section>
+    <!--Teams-->
+    <section class="teams" id="Teams">
+        <h1>Teams participating in the Player Auction</h1>
+        <p>Add the variable font stylesheet request to your head tag and the current variable axes configuration to icons using CSS.</p>
+        <div class="row">
+            <div class="team-col-rcb">
+                <h3>Royal Challengers Bangalore</h3>
+                <img src="images/rcblogo.png">
+                <p>Royal Challengers Bangalore are a franchise cricket team based in Bengaluru, Karnataka, that plays in the Indian Premier League. It was founded in 2008 by United Spirits and named after the company's liquor brand Royal Challenge.</p>
+            </div>
+            <div class="team-col-csk">
+                <h3>Chennai Super Kings</h3>
+                <img src="images/csklogo.png">
+                <p>Chennai Super Kings is an Indian Premier League franchise cricket team based in Chennai, Tamil Nadu, India. Founded in 2008, the team plays its home matches at the M. A. Chidambaram Stadium in Chennai. The team is owned by India Cements Limited through the Chennai Super Kings Cricket Limited holding company.</p>
+            </div>
+            <div class="team-col-mi">
+                <h3>Mumbai Indians</h3>
+                <img src="images/milogo.png">
+                <p>Mumbai Indians are a franchise cricket team based in Mumbai, Maharashtra, that competes in the Indian Premier League and is the most successful team of the tournament with 5 titles. Founded in 2008, the team is owned by India's biggest conglomerate, Reliance Industries</p>
+            </div>
+            <div class="team-col-kkr">
+                <h3>Kolkata Knight Riders</h3>
+                <img src="images/kkrlogo.png">
+                <p>Kolkata Knight Riders are a franchise cricket team representing the city of Kolkata in the Indian Premier League. The franchise is owned by Bollywood actor Shah Rukh Khan, actress Juhi Chawla and her spouse Jay Mehta. The Knight Riders play at the Eden Gardens stadium.</p>
+            </div>
+        </div>
+    </section>
+    <!--IPL'22-->
+    <section class="ipl22" id="2022">
+        <h1>IPL'22 Edition</h1>
+        <p>The 2022 Indian Premier League, also known as IPL 15 , was the fifteenth season of the Indian Premier League (IPL). The tournament was played from 26 March 2022 to 29 May 2022. The group stage of the tournament was played entirely in the state of Maharashtra, with Mumbai, Navi Mumbai and Pune hosting matches.
+            The season saw the expansion of the league with the addition of two new franchises. Chennai Super Kings were the defending champions, having won their fourth title during the previous season.
+            In the final one of the new franchises, Gujarat Titans, beat Rajasthan Royals by seven wickets to win their first title.</p>
+        <div class="row">
+            <div class="ipl22-col">
+                <img src="images/winner.jpg">
+                <div class="layer">
+                    <h3>Winner Gujarat Titans!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Contact-->
+    <section class="cu" id="contact">
+        <h1>For any queries</h1>
+        <a href="Contact.html" class="hero-btn">CONTACT US</a>
+    </section>
+    <!--Footer-->
+    <section class="footer" id="foot">
+        <h4>About Us</h4>
+        <p>Indian professional Twenty20 (T20) cricket league established in 2008. The league, which is based on a round-robin group and knockout format, has teams in major Indian cities.</p>
+        <div class="icons">
+            <a a href="https://www.facebook.com/IPL/"  target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/IPL?s=20" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter" ></i></a>
+            <a href="https://www.instagram.com/iplt20/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" ></i></a>
+            <a href="https://in.linkedin.com/company/indian-premier-league-india" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin" ></i></a>
+        </div>
+        <p>Made by Aryaman, Archit, Ayush</p>
+    </section>
+
+    <!--js for menu toggle-->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0px";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>

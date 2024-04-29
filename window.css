@@ -1,0 +1,332 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Responsive layout */
+  @media (min-width: 868px) {
+    /* Main section */
+    .main-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 5rem;
+    }
+    
+    .player-card {
+      min-width: calc(50.33% - 2rem);
+      
+    }
+  }
+  
+  /* Navigation bar */
+   /* Header styles */
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .header:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .header__logo img {
+    height: 5rem;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header__logo:hover img {
+    transform: scale(1.5);
+  }
+  
+  .header__nav-list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .header__nav-item {
+    margin-right: 2rem;
+    position: relative;
+  }
+  
+  .header__nav-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .header__nav-link:hover {
+    color: #007bff;
+  }
+  
+  .header__nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 100%;
+    height: 0.2rem;
+    background-color: #007bff;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .header__nav-link:hover::before {
+    transform: scaleX(1);
+  }
+ 
+  /* Button styles */
+.submit-btn {
+  
+  background-color: #22264a;
+  border: deepskyblue;
+  color: white;
+  padding: 20px 24px;
+  text-align: center;
+  text-decoration: aquamarine;
+  border-radius: 40px;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 98.8%;
+  
+}
+
+/* Button hover animation */
+.submit-btn::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 0;
+  transition:  0.5s ease;
+}
+
+.submit-btn:hover::before {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+}
+
+/* Button click animation */
+.submit-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:active::after {
+  width: 200%;
+  height: 200%;
+  opacity: 1;
+  
+}
+
+/* Button responsive styles */
+@media screen and (max-width: 480px) {
+  .submit-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
+  /*Upcoming*/
+  .upcoming{
+    display: flex;
+    justify-content: space-between;
+    align-items: auto;
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 4px;
+    max-width: calc(250%-2rem);
+    
+
+  }
+  .upcoming:hover{
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    
+    
+  }
+  .upsection.player-card
+  {
+    display: table-row-group;
+    align-items: right;
+    max-width: 20%;
+
+    
+  }
+  
+  /* Player cards */
+
+  .player-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .player-card:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  }
+  
+ .uplayer-image {
+    height: 15rem;
+    background-color: #ccc;
+    background-image: url('Virat-Kohli-Wallpaper-1.jpg');
+    background-position: center;
+    padding: 100px;
+   
+  }
+  /* Player details */
+.player-details {
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  .player-name {
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .player-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+  
+  .player-age,
+  .player-country {
+    font-size: 1.8rem;
+    color: #999;
+  }
+  
+  .upplayer-age,
+  .upplayer-country {
+    font-size: 1.25rem;
+    color: #999;
+  }
+  
+  .player-price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: #0099ff;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  /* Responsive images */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Responsive font sizes */
+  @media (min-width: 768px) {
+    /* Navigation bar */
+    .navbar-brand {
+      font-size: 3rem;
+    }
+  
+    .navbar-nav li a {
+      font-size: 1.25rem;
+    }
+  
+    /* Player cards */
+    .player-name {
+      font-size: 3rem;
+    }
+  
+    .upplayer-name {
+      font-size: 2rem;
+    }
+  
+    .player-info {
+      font-size: 1.25rem;
+    }
+  
+    .player-price {
+      font-size: 2rem;
+    }
+    /* Player card */
+.card {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  
+  .player-card {
+    margin-bottom: 0rem;
+  }
+  
+  .player-image {
+    height: 35rem;
+    background-size: cover;
+    background-position: center;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .player-card:hover .player-image {
+    transform: scale(1.1);
+  }
+  
+  .highlight {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    transform: scale(0);
+    z-index: 999;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .player-card:hover .highlight {
+    transform: scale(2);
+  }
+  
+  }
+  input[type="submit"]:disabled .submit-btn {
+    background: #09012c;
+  }
+  
